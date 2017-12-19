@@ -19,8 +19,8 @@ class App extends React.Component {
 
   getRandomImage = () => {
     axios
-      .get("https://dog.ceo/api/breed/{breed name}/images/random")
-    // .get("https://dog.ceo/api/breeds/image/random")
+      // .get("https://dog.ceo/api/breed/{breed name}/images/random")
+    .get("https://dog.ceo/api/breeds/image/random")
     .then(response => {
       this.setState({
         imgURL: response.data.message
